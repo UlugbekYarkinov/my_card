@@ -12,6 +12,7 @@ class Avatar extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal.shade900,
           title: const Center(child: Text('Avatar App')),
         ),
         body: Container(
@@ -19,22 +20,47 @@ class Avatar extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
-              CircleAvatar(
+            children: [
+              const CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.red,
                 backgroundImage: AssetImage('images/me.jpg'),
               ),
-              SizedBox(
+              const SizedBox(
                 width: double.infinity,
                 height: 20.0,
               ),
-              Text(
+              const Text(
                 'Iskander',
                 style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.white,
-                  fontFamily: 'Raleway',
+                  fontFamily: 'Silkscreen',
+                ),
+              ),
+              const Text(
+                'Junior developer at CapacUrganski',
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.white,
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 6.0),
+                color: Colors.white,
+                child: const SizedBox(
+                  height: 1.0,
+                  width: 240.0,
+                ),
+              ),
+              const Card(
+                child: ListTile(
+                  leading: Icon(
+                    Icons.add,
+                    size: 20.0,
+                    color: Colors.teal,
+                  ),
+                  title: Text('laaa'),
                 ),
               ),
             ],
