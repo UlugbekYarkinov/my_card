@@ -14,15 +14,31 @@ class Avatar extends StatelessWidget {
         appBar: AppBar(
           title: const Center(child: Text('Avatar App')),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            CircleAvatar(
-              radius: 50.0,
-              backgroundColor: Colors.red,
-            ),
-          ],
+        body: Container(
+          color: Colors.teal,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: const [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundColor: Colors.red,
+                backgroundImage: AssetImage('images/me.jpg'),
+              ),
+              SizedBox(
+                width: double.infinity,
+                height: 20.0,
+              ),
+              Text(
+                'Iskander',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontFamily: 'Raleway',
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
