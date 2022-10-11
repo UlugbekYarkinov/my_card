@@ -58,7 +58,7 @@ class Avatar extends StatelessWidget {
               ),
               const PersonalCard(
                 icon: Icons.phone,
-                label: '+998993999999',
+                label: '+99899377777',
               ),
               const PersonalCard(
                 icon: Icons.alternate_email_outlined,
