@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/card.dart';
 
 void main() {
   runApp(const Avatar());
@@ -10,6 +11,7 @@ class Avatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.teal.shade900,
@@ -31,7 +33,7 @@ class Avatar extends StatelessWidget {
                 height: 20.0,
               ),
               const Text(
-                'Iskander',
+                'Ya.Ulubgek',
                 style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.white,
@@ -39,7 +41,7 @@ class Avatar extends StatelessWidget {
                 ),
               ),
               const Text(
-                'Junior developer at CapacUrganski',
+                'Junior Flutter Developer',
                 style: TextStyle(
                   fontSize: 15.0,
                   color: Colors.white,
@@ -53,15 +55,13 @@ class Avatar extends StatelessWidget {
                   width: 240.0,
                 ),
               ),
-              const Card(
-                child: ListTile(
-                  leading: Icon(
-                    Icons.add,
-                    size: 20.0,
-                    color: Colors.teal,
-                  ),
-                  title: Text('laaa'),
-                ),
+              const PersonalCard(
+                icon: Icons.phone,
+                label: '+998993999999',
+              ),
+              const PersonalCard(
+                icon: Icons.alternate_email_outlined,
+                label: 'yarkinovulugbek@gmail.com',
               ),
             ],
           ),
