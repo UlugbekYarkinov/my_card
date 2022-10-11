@@ -14,8 +14,9 @@ class Avatar extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.teal.shade900,
           title: const Center(child: Text('Avatar App')),
+          backgroundColor: Colors.teal.shade900,
+          elevation: 20.0,
         ),
         body: Container(
           color: Colors.teal,
